@@ -1,0 +1,457 @@
+{
+  "version": 3,
+  "exportDate": "2026-03-15T21:36:31.416Z",
+  "exportedGroups": [
+    "config",
+    "metrics",
+    "leagues",
+    "profiles",
+    "interface",
+    "scouting",
+    "views"
+  ],
+  "settings": {
+    "columnMapping": {
+      "uid": "UID",
+      "name": "Name",
+      "pos": "Position",
+      "age": "Age",
+      "height": "Height",
+      "weight": "Weight",
+      "nationality": "Nat",
+      "club": "Club",
+      "division": "Division",
+      "wage": "Wage",
+      "value": "Transfer Value",
+      "apps": "Apps",
+      "mins": "Mins",
+      "foot": "Preferred Foot",
+      "euNational": "Home-Grown Status"
+    },
+    "positionMapping": {
+      "G": [
+        "GB"
+      ],
+      "DC": [
+        "D (DC)",
+        "D (C)",
+        "D (DGC)",
+        "D (GC)",
+        "D/M (C)",
+        "D/M/MO (C)",
+        "D/MO (C)",
+        "D/MO (DG)",
+        "D (RLC)"
+      ],
+      "DL": [
+        "AL (D)",
+        "AL (DG)",
+        "AL (G)",
+        "AL/M (D)",
+        "AL/M (DG)",
+        "AL/M (G)",
+        "AL/M/MO (D)",
+        "AL/M/MO (DG)",
+        "AL/M/MO (G)",
+        "AL/MO (D)",
+        "AL/MO (DG)",
+        "AL/MO (G)",
+        "D (D)",
+        "D (DC)",
+        "D (DG)",
+        "D (DGC)",
+        "D (G)",
+        "D (GC)",
+        "D/AL (D)",
+        "D/AL (DG)",
+        "D/AL (G)",
+        "D/AL/M (D)",
+        "D/AL/M (DG)",
+        "D/AL/M (G)",
+        "D/AL/M/MO (D)",
+        "D/AL/M/MO (DG)",
+        "D/AL/M/MO (G)",
+        "D/AL/MO (D)",
+        "D/AL/MO (G)",
+        "D/M (D)",
+        "D/M (G)",
+        "D/M/MO (D)",
+        "D/M/MO (G)",
+        "D/MO (DG)",
+        "D (L)",
+        "D (RLC)",
+        "D/WB (L)",
+        "D/WB/M (L)",
+        "WB (L)",
+        "WB (R)",
+        "WB (RL)",
+        "WB/M (L)",
+        "WB/M (R)"
+      ],
+      "MDC": [
+        "D/M (C)",
+        "D/M/MO (C)",
+        "MD",
+        "DM"
+      ],
+      "MC": [
+        "M (C)",
+        "M (DC)",
+        "D/M (C)",
+        "M (DGC)",
+        "M (GC)",
+        "M/MO (C)",
+        "M/MO (DC)",
+        "M/MO (DGC)",
+        "M/MO (GC)",
+        "M (LC)",
+        "M (RC)",
+        "M/AM (C)",
+        "M/AM (LC)",
+        "M/AM (RC)",
+        "M/AM (RLC)"
+      ],
+      "MOC": [
+        "D/M/MO (C)",
+        "D/MO (C)",
+        "M/MO (C)",
+        "M/MO (DC)",
+        "M/MO (DGC)",
+        "M/MO (GC)",
+        "MO (C)",
+        "MO (DC)",
+        "MO (DGC)",
+        "MO (GC)",
+        "AM (LC)",
+        "AM (RC)",
+        "AM (RLC)",
+        "M/AM (C)",
+        "M/AM (LC)",
+        "M/AM (RC)",
+        "M/AM (RLC)",
+        "AM (C)"
+      ],
+      "ML": [
+        "AL/M (D)",
+        "AL/M (DG)",
+        "AL/M (G)",
+        "AL/M/MO (D)",
+        "AL/M/MO (DG)",
+        "AL/M/MO (G)",
+        "AL/MO (D)",
+        "AL/MO (DG)",
+        "AL/MO (G)",
+        "D/AL/M (D)",
+        "D/AL/M (DG)",
+        "D/AL/M (G)",
+        "D/AL/M/MO (D)",
+        "D/AL/M/MO (DG)",
+        "D/AL/M/MO (G)",
+        "D/AL/MO (D)",
+        "D/AL/MO (G)",
+        "D/M (D)",
+        "D/M (G)",
+        "D/M/MO (D)",
+        "D/M/MO (G)",
+        "D/MO (DG)",
+        "M (DC)",
+        "M (DG)",
+        "M (DGC)",
+        "M (G)",
+        "M (GC)",
+        "M/MO (D)",
+        "M/MO (DC)",
+        "M/MO (DG)",
+        "M/MO (DGC)",
+        "M/MO (G)",
+        "M/MO (GC)",
+        "M (D)",
+        "MO (D)",
+        "MO (DC)",
+        "MO (DG)",
+        "MO (DGC)",
+        "MO (G)",
+        "MO (GC)",
+        "AM (L)",
+        "AM (LC)",
+        "AM (R)",
+        "AM (RC)",
+        "AM (RL)",
+        "AM (RLC)",
+        "D/WB/M (L)",
+        "M (L)",
+        "M (LC)",
+        "M (R)",
+        "M (RC)",
+        "M (RL)",
+        "M/AM (L)",
+        "M/AM (LC)",
+        "M/AM (R)",
+        "M/AM (RC)",
+        "M/AM (RL)",
+        "M/AM (RLC)",
+        "WB/M (L)",
+        "WB/M (R)"
+      ],
+      "BU": [
+        "BT (C)",
+        "ST (C)"
+      ]
+    },
+    "weights": {
+      "global": {
+        "goalThreat": 5,
+        "goalkeeper": 0,
+        "aerial": 2
+      }
+    },
+    "catConfig": {
+      "goalThreat": [
+        {
+          "key": "Gls/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Gls/90"
+        },
+        {
+          "key": "Conv %",
+          "weight": 1,
+          "inverted": false,
+          "label": "Conv %"
+        }
+      ],
+      "aerial": [
+        {
+          "key": "Hdr %",
+          "weight": 1,
+          "inverted": false,
+          "label": "Hdr %"
+        },
+        {
+          "key": "Hdrs W/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Hdrs W/90"
+        }
+      ],
+      "chanceCreat": [
+        {
+          "key": "Asts/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Asts/90"
+        },
+        {
+          "key": "OP-KP/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "OP-KP/90"
+        }
+      ],
+      "defImpact": [
+        {
+          "key": "Blk/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Blk/90"
+        },
+        {
+          "key": "Clr/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Clr/90"
+        }
+      ],
+      "presRec": [
+        {
+          "key": "Int/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Int/90"
+        },
+        {
+          "key": "Sprints/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Sprints/90"
+        }
+      ],
+      "ballProg": [
+        {
+          "key": "Drb/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Drb/90"
+        },
+        {
+          "key": "Pr passes/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Pr passes/90"
+        }
+      ],
+      "goalkeeper": [
+        {
+          "key": "Sv %",
+          "weight": 1,
+          "inverted": false,
+          "label": "Sv %"
+        },
+        {
+          "key": "Shts Blckd/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Shts Blckd/90"
+        }
+      ]
+    },
+    "minMinsThreshold": 800,
+    "pos_profiles_v1": [
+      {
+        "id": "custom_1773602027897",
+        "name": "BU PIVOT",
+        "readonly": false,
+        "enabled": true,
+        "posGroups": [
+          "BU"
+        ],
+        "weights": {
+          "scoreGoalThreat": 9,
+          "scoreChanceCreat": 7,
+          "scoreBallProg": 6,
+          "scoreDefImpact": 5,
+          "scorePresRec": 5,
+          "scoreAerial": 9,
+          "scoreGoalkeeper": 0
+        }
+      }
+    ],
+    "pos_profile_active_v1": "custom_1773602027897",
+    "language": "fr",
+    "visibleMenus": {
+      "scatter": true,
+      "comparison": true,
+      "aiSearch": false,
+      "_comparisonMigrated": true,
+      "debug": false
+    },
+    "showNavLabels": true,
+    "colVisibility": {
+      "scoreHidden": [],
+      "infoHidden": [],
+      "statsVisible": []
+    },
+    "tablePrefs": {
+      "sortKeysByTab": {
+        "all": [
+          {
+            "col": "moneyball",
+            "dir": 1
+          }
+        ],
+        "goalThreat": [
+          {
+            "col": "scoreGoalThreat",
+            "dir": -1
+          }
+        ],
+        "chanceCreat": [
+          {
+            "col": "scoreChanceCreat",
+            "dir": 1
+          }
+        ],
+        "ballProg": [
+          {
+            "col": "scoreBallProg",
+            "dir": 1
+          }
+        ],
+        "defImpact": [
+          {
+            "col": "scoreDefImpact",
+            "dir": 1
+          }
+        ],
+        "presRec": [
+          {
+            "col": "scorePresRec",
+            "dir": 1
+          }
+        ],
+        "aerial": [
+          {
+            "col": "scoreAerial",
+            "dir": 1
+          }
+        ],
+        "goalkeeper": [
+          {
+            "col": "scoreGoalkeeper",
+            "dir": 1
+          }
+        ]
+      },
+      "showPct": true,
+      "tab": "goalThreat",
+      "colFilters": {},
+      "pageSize": 100
+    },
+    "scoutingCatWeights": {
+      "goalThreat": 2,
+      "chanceCreat": 3,
+      "ballProg": 3,
+      "defImpact": 3,
+      "presRec": 3,
+      "aerial": 3,
+      "goalkeeper": 1
+    },
+    "scoutingVisibleCats": [
+      "profile_custom_1772892040590",
+      "profile_custom_1772897381893",
+      "goalThreat",
+      "chanceCreat",
+      "ballProg",
+      "defImpact",
+      "presRec",
+      "aerial",
+      "goalkeeper"
+    ],
+    "scoutingFilterEnabled": true,
+    "scoutingAgeMax": 27,
+    "scoutingWageMax": 124000,
+    "scoutingValueMax": 600000,
+    "scoutingExcludeUnknown": false,
+    "scoutingDisabledCats": [
+      "goalkeeper",
+      "profile_custom_1772897381893",
+      "profile_custom_1772892040590"
+    ],
+    "scatterState": {
+      "xKey": "scoreChanceCreat",
+      "yKey": "moneyball",
+      "xMin": "",
+      "xMax": "",
+      "yMin": "",
+      "yMax": "",
+      "showPct": true,
+      "sizeBubble": true,
+      "showRegr": true
+    },
+    "myteamVisibleCats": [
+      "goalThreat",
+      "chanceCreat",
+      "ballProg",
+      "defImpact",
+      "presRec",
+      "aerial",
+      "goalkeeper"
+    ],
+    "playerAnalysisPrefs": {
+      "leftPanelOpen": true
+    },
+    "ranking_show_pct": true,
+    "groq_api_key": "",
+    "gemini_api_key": ""
+  }
+}
