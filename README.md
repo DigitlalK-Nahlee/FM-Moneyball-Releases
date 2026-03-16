@@ -74,7 +74,7 @@ A Windows warning may appear. This is **normal**. Click "More info" and then "Ru
 
 * **Table View:** A clear summary of all imported data statistics to compare players at a glance.
 
-![Vue Tableau](./Exemples/screenshots/Tableau.png)
+![Vue Tableau](./screenshots/Tableau.png)
 
 ---
 
@@ -83,7 +83,7 @@ A Windows warning may appear. This is **normal**. Click "More info" and then "Ru
 
 * **Player Card:** A detailed breakdown (Radar Chart style) to visualize a specific player's strengths and weaknesses based on their role.
 
-![Carte Joueur](./Exemples/screenshots/Carte_joueur.png)
+![Carte Joueur](./screenshots/Carte_joueur.png)
 
 
 
