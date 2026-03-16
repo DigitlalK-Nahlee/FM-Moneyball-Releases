@@ -63,3 +63,28 @@ Place the view files into the folder corresponding to your FM version:
 
 ### Security (Executable .exe)
 A Windows warning may appear. This is **normal**. Click "More info" and then "Run anyway." This program contains no malicious code and only reads the files you provide.
+
+---
+
+
+
+## 🖼️ Exemples de Visualisation / Visualization Examples
+
+* **Vue Tableau :** Un récapitulatif clair de toutes les statistiques des données importées pour comparer les joueurs en un coup d'œil.
+
+* **Table View:** A clear summary of all imported data statistics to compare players at a glance.
+
+![Vue Tableau](./Exemples/screenshots/Tableau.png)
+
+---
+
+* **Carte Joueur :** Une fiche détaillée (type "Radar Chart") pour visualiser les points forts et les faiblesses d'un joueur précis selon son rôle.
+
+
+* **Player Card:** A detailed breakdown (Radar Chart style) to visualize a specific player's strengths and weaknesses based on their role.
+
+![Carte Joueur](./Exemples/screenshots/Carte_joueur.png)
+
+
+
+
