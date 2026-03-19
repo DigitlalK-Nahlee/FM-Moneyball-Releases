@@ -1,9 +1,5 @@
 # 📋 GUIDE D'UTILISATION / USER GUIDE
 
-Lien / Link : [https://www.transfernow.net/dl/20260316E0WKlfxD](https://www.transfernow.net/dl/20260316E0WKlfxD)
-
----
-
 ## 🇫🇷 SECTION FRANÇAIS
 
 ### ⚙️ Fonctionnement
