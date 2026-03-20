@@ -1,0 +1,741 @@
+{
+  "version": 3,
+  "exportDate": "2026-03-20T22:00:12.673Z",
+  "exportedGroups": [
+    "config",
+    "metrics",
+    "leagues",
+    "profiles",
+    "interface",
+    "scouting",
+    "views"
+  ],
+  "settings": {
+    "columnMapping": {
+      "uid": "Unique ID",
+      "name": "Joueur",
+      "pos": "Position",
+      "age": "Âge",
+      "height": "Taille",
+      "weight": null,
+      "nationality": "Pays de naissance",
+      "club": "Club",
+      "division": "Division",
+      "wage": "Salaire",
+      "value": "Montant transfert",
+      "apps": "Matchs disputés",
+      "mins": "Minutes",
+      "foot": "Meilleur pied",
+      "contractEnd": "Expire le",
+      "euNational": "Ressortissant de l'UE",
+      "status": "Sta"
+    },
+    "positionMapping": {
+      "G": [
+        "GB"
+      ],
+      "DC": [
+        "D (DC)",
+        "D (C)",
+        "D (DGC)",
+        "D (GC)",
+        "D/M (C)",
+        "D/M/MO (C)",
+        "D/MO (C)",
+        "D/MO (DG)"
+      ],
+      "DL": [
+        "AL (D)",
+        "AL (DG)",
+        "AL (G)",
+        "AL/M (D)",
+        "AL/M (DG)",
+        "AL/M (G)",
+        "AL/M/MO (D)",
+        "AL/M/MO (DG)",
+        "AL/MO (D)",
+        "AL/MO (DG)",
+        "AL/MO (G)",
+        "D (D)",
+        "D (DC)",
+        "D (DG)",
+        "D (DGC)",
+        "D (G)",
+        "D (GC)",
+        "D/AL (D)",
+        "D/AL (DG)",
+        "D/AL (G)",
+        "D/AL/M (D)",
+        "D/AL/M (DG)",
+        "D/AL/M (G)",
+        "D/AL/M/MO (D)",
+        "D/AL/M/MO (DG)",
+        "D/AL/M/MO (G)",
+        "D/AL/MO (D)",
+        "D/AL/MO (G)",
+        "D/M (D)",
+        "D/M (G)",
+        "D/M/MO (D)",
+        "D/M/MO (G)",
+        "D/MO (DG)",
+        "D/MO (D)",
+        "D/MO (G)",
+        "D/AL/MO (DG)",
+        "AL/M/MO (G)",
+        "D/M/MO (DG)"
+      ],
+      "MDC": [
+        "D/M (C)",
+        "D/M/MO (C)",
+        "MD"
+      ],
+      "MC": [
+        "M (C)",
+        "M (DC)",
+        "D/M (C)",
+        "M (DGC)",
+        "M (GC)",
+        "M/MO (C)",
+        "M/MO (DC)",
+        "M/MO (DGC)",
+        "M/MO (GC)"
+      ],
+      "MOC": [
+        "D/M/MO (C)",
+        "D/MO (C)",
+        "M/MO (C)",
+        "M/MO (DC)",
+        "M/MO (DGC)",
+        "M/MO (GC)",
+        "MO (C)",
+        "MO (DC)",
+        "MO (DGC)",
+        "MO (GC)"
+      ],
+      "ML": [
+        "AL/M (D)",
+        "AL/M (DG)",
+        "AL/M (G)",
+        "AL/M/MO (D)",
+        "AL/M/MO (DG)",
+        "AL/MO (D)",
+        "AL/MO (DG)",
+        "AL/MO (G)",
+        "D/AL/M (D)",
+        "D/AL/M (DG)",
+        "D/AL/M (G)",
+        "D/AL/M/MO (D)",
+        "D/AL/M/MO (DG)",
+        "D/AL/M/MO (G)",
+        "D/AL/MO (D)",
+        "D/AL/MO (G)",
+        "D/M (D)",
+        "D/M (G)",
+        "D/M/MO (D)",
+        "D/M/MO (G)",
+        "D/MO (DG)",
+        "M (DC)",
+        "M (DG)",
+        "M (DGC)",
+        "M (G)",
+        "M (GC)",
+        "M/MO (D)",
+        "M/MO (DC)",
+        "M/MO (DG)",
+        "M/MO (DGC)",
+        "M/MO (G)",
+        "M/MO (GC)",
+        "M (D)",
+        "MO (D)",
+        "MO (DC)",
+        "MO (DG)",
+        "MO (DGC)",
+        "MO (G)",
+        "MO (GC)",
+        "D/MO (D)",
+        "D/MO (G)",
+        "AL/M/MO (G)",
+        "D/AL/MO (DG)",
+        "D/M/MO (DG)"
+      ],
+      "BU": [
+        "BT (C)"
+      ]
+    },
+    "weights": {
+      "global": {
+        "goalThreat": 5,
+        "goalkeeper": 0,
+        "aerial": 2
+      }
+    },
+    "catConfig": {
+      "goalThreat": [
+        {
+          "key": "xG(+)",
+          "weight": 5,
+          "inverted": false,
+          "label": "xG(+)"
+        },
+        {
+          "key": "Buts",
+          "weight": 5,
+          "inverted": false,
+          "label": "Buts"
+        },
+        {
+          "key": "Buts par 90 min. de jeu",
+          "weight": 4,
+          "inverted": false,
+          "label": "Buts par 90 min. de jeu"
+        },
+        {
+          "key": "xG-HP/90",
+          "weight": 2,
+          "inverted": false,
+          "label": "xG-HP/90"
+        },
+        {
+          "key": "% conv.",
+          "weight": 1,
+          "inverted": false,
+          "label": "% conv."
+        }
+      ],
+      "aerial": [
+        {
+          "key": "% têtes",
+          "weight": 3,
+          "inverted": false,
+          "label": "% têtes"
+        },
+        {
+          "key": "Têtes r/90",
+          "weight": 2,
+          "inverted": false,
+          "label": "Têtes r/90"
+        },
+        {
+          "key": "Têt D/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Têt D/90"
+        }
+      ],
+      "chanceCreat": [
+        {
+          "key": "Passes décisives",
+          "weight": 5,
+          "inverted": false,
+          "label": "Passes décisives"
+        },
+        {
+          "key": "Déc/90",
+          "weight": 4,
+          "inverted": false,
+          "label": "Déc/90"
+        },
+        {
+          "key": "Occ. / 90 min.",
+          "weight": 3,
+          "inverted": false,
+          "label": "Occ. / 90 min."
+        },
+        {
+          "key": "PdA/90",
+          "weight": 2,
+          "inverted": false,
+          "label": "PdA/90"
+        },
+        {
+          "key": "Ct réu/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Ct réu/90"
+        },
+        {
+          "key": "Ct R/T",
+          "weight": 1,
+          "inverted": false,
+          "label": "Ct R/T"
+        }
+      ],
+      "defImpact": [
+        {
+          "key": "Poss remp/90",
+          "weight": 5,
+          "inverted": false,
+          "label": "Poss remp/90"
+        },
+        {
+          "key": "Dég/90",
+          "weight": 3,
+          "inverted": false,
+          "label": "Dég/90"
+        },
+        {
+          "key": "Blq/90",
+          "weight": 3,
+          "inverted": false,
+          "label": "Blq/90"
+        },
+        {
+          "key": "Tcl D/90",
+          "weight": 2,
+          "inverted": false,
+          "label": "Tcl D/90"
+        },
+        {
+          "key": "Cartons rouges",
+          "weight": 1,
+          "inverted": true,
+          "label": "Cartons rouges"
+        },
+        {
+          "key": "ErB",
+          "weight": 1,
+          "inverted": true,
+          "label": "ErB"
+        }
+      ],
+      "presRec": [
+        {
+          "key": "Dist/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Dist/90"
+        },
+        {
+          "key": "Int/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Int/90"
+        },
+        {
+          "key": "Sprints/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Sprints/90"
+        },
+        {
+          "key": "Pres E/90",
+          "weight": 1,
+          "inverted": false,
+          "label": "Pres E/90"
+        },
+        {
+          "key": "Tcl R",
+          "weight": 1,
+          "inverted": false,
+          "label": "Tcl R"
+        }
+      ],
+      "ballProg": [
+        {
+          "key": "Drb/90",
+          "weight": 5,
+          "inverted": false,
+          "label": "Drb/90"
+        },
+        {
+          "key": "PC-J/90",
+          "weight": 5,
+          "inverted": false,
+          "label": "PC-J/90"
+        },
+        {
+          "key": "Passes pr./90",
+          "weight": 4,
+          "inverted": false,
+          "label": "Passes pr./90"
+        },
+        {
+          "key": "Poss perd/90",
+          "weight": 3,
+          "inverted": true,
+          "label": "Poss perd/90"
+        },
+        {
+          "key": "% pas.",
+          "weight": 1,
+          "inverted": false,
+          "label": "% pas."
+        }
+      ],
+      "goalkeeper": [
+        {
+          "key": "xG év/90",
+          "weight": 5,
+          "inverted": false,
+          "label": "xG év/90"
+        },
+        {
+          "key": "% Ra",
+          "weight": 4,
+          "inverted": false,
+          "label": "% Ra"
+        },
+        {
+          "key": "Arrêts/90",
+          "weight": 2,
+          "inverted": false,
+          "label": "Arrêts/90"
+        },
+        {
+          "key": "Cln/90",
+          "weight": 2,
+          "inverted": false,
+          "label": "Cln/90"
+        },
+        {
+          "key": "Ratio pen. arrêtés",
+          "weight": 1,
+          "inverted": false,
+          "label": "Ratio pen. arrêtés"
+        },
+        {
+          "key": "% Aa",
+          "weight": 0.1,
+          "inverted": false,
+          "label": "% Aa"
+        }
+      ]
+    },
+    "minMinsThreshold": 800,
+    "globalLeagues": [
+      {
+        "name": "Premier League",
+        "coeff": 1.25,
+        "isVisible": true
+      },
+      {
+        "name": "Première Division",
+        "coeff": 1.2,
+        "isVisible": true
+      },
+      {
+        "name": "Bundesliga",
+        "coeff": 1.2,
+        "isVisible": true
+      },
+      {
+        "name": "Serie A",
+        "coeff": 1.15,
+        "isVisible": true
+      },
+      {
+        "name": "Ligue 1 McDonald's",
+        "coeff": 1.1,
+        "isVisible": true
+      },
+      {
+        "name": "Première Ligue",
+        "coeff": 1.05,
+        "isVisible": true
+      },
+      {
+        "name": "Super League",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "Eredivisie",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "1ère Division",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "Jupiler Pro League",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "Championnat d'Ukraine",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "3F Superliga",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "Super League 1",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "William Hill Premiership",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "MLS",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "Premier Division",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "PKO BP Ekstraklasa",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "Première division",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "SuperLiga",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "J1 League",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "Prem. d'afrique du Sud",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "Championnat A",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "K League 1",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "Isuzu UTE A-League",
+        "coeff": 1,
+        "isVisible": true
+      },
+      {
+        "name": "2ème Division",
+        "coeff": 1,
+        "isVisible": true
+      }
+    ],
+    "pos_profiles_v1": [
+      {
+        "id": "custom_1773602027897",
+        "name": "BU PIVOT",
+        "readonly": false,
+        "enabled": true,
+        "posGroups": [
+          "BU",
+          "ML"
+        ],
+        "weights": {
+          "scoreGoalThreat": 8,
+          "scoreChanceCreat": 6,
+          "scoreBallProg": 6,
+          "scoreDefImpact": 4,
+          "scorePresRec": 4,
+          "scoreAerial": 10,
+          "scoreGoalkeeper": 0
+        }
+      }
+    ],
+    "pos_profile_active_v1": "custom_1773602027897",
+    "language": "fr",
+    "visibleMenus": {
+      "scatter": true,
+      "comparison": true,
+      "aiSearch": false,
+      "_comparisonMigrated": true
+    },
+    "showNavLabels": false,
+    "colVisibility": {
+      "scoreHidden": [],
+      "infoHidden": [
+        "status",
+        "apps",
+        "mins",
+        "foot"
+      ],
+      "statsVisible": [
+        "Buts/90"
+      ]
+    },
+    "tablePrefs": {
+      "sortKeysByTab": {
+        "all": [
+          {
+            "col": "scoreGoalkeeper",
+            "dir": -1
+          }
+        ],
+        "goalThreat": [
+          {
+            "col": "scoreGoalThreat",
+            "dir": 1
+          }
+        ],
+        "chanceCreat": [
+          {
+            "col": "scoreChanceCreat",
+            "dir": 1
+          }
+        ],
+        "ballProg": [
+          {
+            "col": "scoreBallProg",
+            "dir": 1
+          }
+        ],
+        "defImpact": [
+          {
+            "col": "scoreDefImpact",
+            "dir": 1
+          }
+        ],
+        "presRec": [
+          {
+            "col": "scorePresRec",
+            "dir": 1
+          }
+        ],
+        "aerial": [
+          {
+            "col": "scoreAerial",
+            "dir": 1
+          }
+        ],
+        "goalkeeper": [
+          {
+            "col": "scoreGoalkeeper",
+            "dir": 1
+          }
+        ],
+        "profile_custom_1772892040590": [
+          {
+            "col": "mb_custom_1772892040590",
+            "dir": 1
+          }
+        ],
+        "profile_custom_1772897381893": [
+          {
+            "col": "mb_custom_1772897381893",
+            "dir": 1
+          }
+        ]
+      },
+      "showPct": true,
+      "tab": "all",
+      "colFilters": {},
+      "pageSize": 50,
+      "colOrder": [
+        "pos",
+        "status",
+        "age",
+        "height",
+        "nationality",
+        "euNational",
+        "foot",
+        "club",
+        "division",
+        "contractEnd",
+        "wage",
+        "value",
+        "pctScoreWage",
+        "pctScoreValue",
+        "pctScoreTotal",
+        "apps",
+        "mins",
+        "Buts",
+        "Passes décisives",
+        "xG(+)",
+        "Buts par 90 min. de jeu",
+        "mb_custom_1772892040590",
+        "mb_custom_1772897381893",
+        "scoreGoalThreat",
+        "scoreChanceCreat",
+        "scoreBallProg",
+        "scoreDefImpact",
+        "scorePresRec",
+        "% conv.",
+        "scoreAerial",
+        "scoreGoalkeeper",
+        "moneyball"
+      ]
+    },
+    "sidebarFilters": {},
+    "tutorialSetupDone": {
+      "completed": true
+    },
+    "tutorialFullDone": {
+      "completed": true
+    },
+    "scoutingCatWeights": {
+      "goalThreat": 5,
+      "chanceCreat": 4,
+      "ballProg": 4,
+      "defImpact": 2,
+      "presRec": 2,
+      "aerial": 4,
+      "goalkeeper": 5
+    },
+    "scoutingVisibleCats": [
+      "profile_custom_1772892040590",
+      "profile_custom_1772897381893",
+      "goalThreat",
+      "chanceCreat",
+      "ballProg",
+      "defImpact",
+      "presRec",
+      "aerial",
+      "goalkeeper"
+    ],
+    "scoutingFilterEnabled": false,
+    "scoutingAgeMax": 24,
+    "scoutingWageMax": 13170000,
+    "scoutingValueMax": 142000000,
+    "scoutingExcludeUnknown": false,
+    "scoutingDisabledCats": [
+      "profile_custom_1772897381893",
+      "profile_custom_1772892040590",
+      "profile_custom_1773602027897",
+      "goalkeeper"
+    ],
+    "scatterState": {
+      "xKey": "mb_custom_1773602027897",
+      "yKey": "moneyball",
+      "xMin": "90",
+      "xMax": "",
+      "yMin": "55",
+      "yMax": "",
+      "showPct": true,
+      "sizeBubble": true,
+      "showRegr": true
+    },
+    "myteamVisibleCats": [
+      "goalThreat",
+      "chanceCreat",
+      "ballProg",
+      "defImpact",
+      "presRec",
+      "aerial",
+      "goalkeeper"
+    ],
+    "playerAnalysisPrefs": {
+      "leftPanelOpen": true
+    },
+    "ranking_show_pct": true,
+    "groq_api_key": "",
+    "gemini_api_key": ""
+  }
+}
